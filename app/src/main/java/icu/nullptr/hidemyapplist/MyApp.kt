@@ -1,5 +1,6 @@
 package icu.nullptr.hidemyapplist
 
+// trigger build
 import android.annotation.SuppressLint
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
