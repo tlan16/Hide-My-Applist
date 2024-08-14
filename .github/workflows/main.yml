@@ -63,7 +63,7 @@ jobs:
       - name: Build release
         id: buildRelease
         run: |
-          ./gradlew :app:buildRelease
+          ./gradlew --scan --debug :app:buildRelease
           echo "releaseName=$(ls app/build/apk/release/HMA*-release.apk | awk -F '(/|.apk)' '{print $5}')" >> $GITHUB_OUTPUT
 
       - name: Build debug
